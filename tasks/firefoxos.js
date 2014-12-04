@@ -32,5 +32,31 @@ module.exports = function (grunt) {
     this.async();
     ffos.logcat();
   });
+
+  grunt.registerMultiTask('ffosstop', 'Stops an application', function () {
+    var done = this.async();
+    ffos.closeApp(this.data.appId, function (err) {
+      if (err) {
+        console.log('ERROR stopping app'.red);
+      }
+      else {
+        console.log('App stopped');
+      }
+      done();
+    });
+  });
+
+  grunt.registerMultiTask('ffoslaunch', 'Launches an application', function () {
+    var done = this.async();
+    ffos.launchApp(this.data.appId, function (err) {
+      if (err) {
+        console.log('ERROR launching app'.red);
+      }
+      else {
+        console.log('App launched');
+      }
+      done();
+    });
+  });
 };
 

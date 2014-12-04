@@ -69,6 +69,46 @@ grunt.initConfig({
 });
 ```
 
+### Stop an app (`ffosstop`)
+
+This task will stop the app running in the FirefoxOS device 
+
+```js
+grunt.initConfig({
+  ffosstop: {
+    app: {
+      appId: 'your-app-id' // unique app identifier
+    }
+  },
+});
+```
+
+Then run the task with:
+
+```shell
+$ grunt ffosstop
+```
+
+### Launch an app (`ffoslaunch`)
+
+This task will launch an app in the FirefoxOS device 
+
+```js
+grunt.initConfig({
+  ffoslaunch: {
+    app: {
+      appId: 'your-app-id' // unique app identifier
+    }
+  },
+});
+```
+
+Then run the task with:
+
+```shell
+$ grunt ffoslaunch
+```
+
 ### Reboot the device (`ffosreset`)
 
 You can reboot B2G with `ffosreset`. Note that this task does not have
