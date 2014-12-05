@@ -25,7 +25,7 @@
   },
   "dependencies": {
     "grunt": "~0.4.1",
-    "node-firefoxos-cli": "git://github.com/dcoloma/node-firefoxos-cli#stop-and-launch"
+    "node-firefoxos-cli": "git://github.com/dcoloma/node-firefoxos-cli#stop-and-launch-new"
   },
   "devDependencies": {
     "grunt-contrib-jshint": "~0.1.1"
